@@ -28,3 +28,5 @@ and this web app created by using 'npx create-react-app my-app'
 10. then export app by using export default
 
 11. In app.css file we maintain css styling to desing the UI by using classNames provided in app.js files also media queries is used to make responsiveness of the web app
+
+12. you can visit the web app https://weather-app-theta-five-11.vercel.app/

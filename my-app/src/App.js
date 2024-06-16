@@ -18,9 +18,6 @@ import drizzle_icon from './Assets/drizzle.png'
 // importing css functionality to design the app
 import './App.css'
 
-// here the ApiKey for fetching data from Openwheathermap
-const APIKey = 'c41d46b4d9a52682a2bdbed0907667d1'
-
 // so the data foolows some code for weather condition so it will help to provide valid image
 // according to weather
 const allIcons = {
@@ -74,7 +71,8 @@ and updating current date and time */
       alert("Please Enter City Name")
     } else {
       try {
-        const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=metric&appid=${APIKey}`
+        // the ApiKey for fetching data from Openwheathermap
+        const url = `https://api.openweathermap.org/data/2.5/weather?q=${searchInput}&units=metric&appid=c41d46b4d9a52682a2bdbed0907667d1`
         const response = await fetch(url)
         const data = await response.json()
         if(!response.ok){
